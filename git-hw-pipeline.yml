@@ -13,4 +13,4 @@ jobs:
       - get: git
         trigger: true
       - task: hello-world
-        file: git/tutorials/basic/task-hello-world/task_hello_world.yml
+        file: git/task-hello-world/task_hello_world.yml
