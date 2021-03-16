@@ -28,4 +28,6 @@ jobs:
           source: {repository: busybox}
         run:
           path: sh
-          args: [date]
+          args:
+            - -exc
+            - date
