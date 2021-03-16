@@ -10,4 +10,10 @@ inputs:
     # path: src/github.com/kkalugerov/ConcourseCI
 
 run:
-  path: resource-src/job-inputs/execute.sh
+  path: sh
+    args:
+    - -exc
+    - |
+      whoami
+      env
+  # path: resource-src/job-inputs/execute.sh
