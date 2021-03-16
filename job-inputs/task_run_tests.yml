@@ -11,4 +11,4 @@ inputs:
     path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
 
 run:
-  path: resource-src/tutorials/basic/job-inputs/task_run_tests.sh
+  path: resource-src/job-inputs/task_run_tests.sh
