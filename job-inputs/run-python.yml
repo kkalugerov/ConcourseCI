@@ -14,6 +14,5 @@ run:
   args:
   - -exc
   - |
-    cd resource-src/job-inputs
-    ls -al
+    python3 resource-src/job-inputs/script.py
   # path: resource-src/job-inputs/execute.sh
