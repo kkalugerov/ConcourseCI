@@ -6,18 +6,11 @@ resources:
       uri: https://github.com/kkalugerov/ConcourseCI.git
       branch: main
 
-  - name: resource-app
-    type: git
-    source:
-      uri: https://github.com/kkalugerov/ConcourseCI.git
-      branch: main
-
 jobs:
   - name: job-test-app
     public: true
     plan:
       - get: resource-src
         trigger: true
-      - get: resource-app
       - task: run-python
         file: resource-src/job-inputs/run-python.yml

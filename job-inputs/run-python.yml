@@ -7,7 +7,6 @@ image_resource:
 
 inputs:
   - name: resource-src
-  - name: resource-app
     # path: src/github.com/kkalugerov/ConcourseCI
 
 run:
