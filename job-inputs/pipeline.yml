@@ -3,13 +3,14 @@ resources:
   - name: resource-src
     type: git
     source:
-      uri: https://github.com/kkalugerov/ConcourseCI
+      uri: https://github.com/kkalugerov/ConcourseCI.git
       branch: main
 
   - name: resource-app
     type: git
     source:
-      uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
+      uri: https://github.com/kkalugerov/ConcourseCI.git
+      branch: main
 
 jobs:
   - name: job-test-app
