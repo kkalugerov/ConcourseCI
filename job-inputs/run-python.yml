@@ -11,9 +11,11 @@ inputs:
 
 run:
   path: sh
-    args:
-    - -exc
-    - |
-      whoami
-      env
+  args:
+  - -exc
+  - |
+    whoami
+    env
+    ls -al
+    pwd
   # path: resource-src/job-inputs/execute.sh
