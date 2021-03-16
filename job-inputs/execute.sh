@@ -2,5 +2,5 @@
 
 set -e
 
-cd src/github.com/kkalugerov/ConcourseCI
+# cd src/github.com/kkalugerov/ConcourseCI
 python3 script.py

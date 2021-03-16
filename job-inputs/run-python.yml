@@ -8,7 +8,7 @@ image_resource:
 inputs:
   - name: resource-src
   - name: resource-app
-    path: src/github.com/kkalugerov/ConcourseCI
+    # path: src/github.com/kkalugerov/ConcourseCI
 
 run:
   path: resource-src/job-inputs/execute.sh

@@ -19,5 +19,5 @@ jobs:
       - get: resource-src
         trigger: true
       - get: resource-app
-      - task: web-app-tests
-        file: resource-src/job-inputs/task_run_tests.yml
+      - task: run-python
+        file: resource-src/job-inputs/run-python.yml
