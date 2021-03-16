@@ -27,7 +27,8 @@ jobs:
           type: docker-image
           source: {repository: busybox}
         run:
-          path: sh
-          args:
-            - -exc
-            - date
+          path: resource-src/job-inputs/get-data.sh
+          # path: sh
+          # args:
+          #   - -exc
+          #   - date
