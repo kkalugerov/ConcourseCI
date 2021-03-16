@@ -1,0 +1,22 @@
+---
+resources:
+  - name: resource-src
+    type: git
+    source:
+      uri: https://github.com/kkalugerov/ConcourseCI
+      branch: main
+
+  - name: resource-app
+    type: git
+    source:
+      uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
+
+jobs:
+  - name: job-test-app
+    public: true
+    plan:
+      - get: resource-src
+      - get: resource-app
+        trigger: true
+      - task: web-app-tests
+        file: resource-src/job-inputs/task_run_tests.yml
