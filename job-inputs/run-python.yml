@@ -10,9 +10,4 @@ inputs:
     path: resource-src/job-inputs/
 
 run:
-  # path: sh
-  # args:
-  # - -exc
-  # - |
-  #   python3 resource-src/job-inputs/script.py
-  path: resource-src/execute.sh
+  path: resource-src/job-inputs/execute.sh
