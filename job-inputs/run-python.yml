@@ -10,9 +10,9 @@ inputs:
     # path: src/github.com/kkalugerov/ConcourseCI
 
 run:
-  path: sh
-  args:
-  - -exc
-  - |
-    python3 resource-src/job-inputs/script.py
-  # path: resource-src/job-inputs/execute.sh
+  # path: sh
+  # args:
+  # - -exc
+  # - |
+  #   python3 resource-src/job-inputs/script.py
+  path: resource-src/job-inputs/execute.sh
