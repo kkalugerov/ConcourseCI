@@ -16,7 +16,7 @@ jobs:
     public: true
     plan:
       - get: resource-src
-      - get: resource-app
         trigger: true
+      - get: resource-app
       - task: web-app-tests
         file: resource-src/job-inputs/task_run_tests.yml
