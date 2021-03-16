@@ -21,13 +21,14 @@ jobs:
       passed: [job-test-app]
       trigger: true
     - task: show-date
-      config:
-        platform: linux
-        image_resource:
-          type: docker-image
-          source: {repository: busybox}
-        run:
-          path: resource-src/job-inputs/get-date.sh
+      file: resource-src/job-inputs/task-get-date.yml
+      # config:
+      #   platform: linux
+      #   image_resource:
+      #     type: docker-image
+      #     source: {repository: busybox}
+      #   run:
+      #     path: resource-src/job-inputs/get-date.sh
           # path: sh
           # args:
           #   - -exc
