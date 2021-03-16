@@ -11,4 +11,4 @@ inputs:
     path: src/github.com/kkalugerov/ConcourseCI
 
 run:
-  path: resource-src/job-inputs/task_run_tests.sh
+  path: resource-src/job-inputs/execute.sh
