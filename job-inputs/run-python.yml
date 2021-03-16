@@ -14,8 +14,6 @@ run:
   args:
   - -exc
   - |
-    whoami
-    env
+    cd resource-src
     ls -al
-    pwd
   # path: resource-src/job-inputs/execute.sh
