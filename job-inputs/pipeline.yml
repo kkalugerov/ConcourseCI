@@ -21,7 +21,7 @@ jobs:
       passed: [job-test-app]
       trigger: true
     - task: show-date
-      file: resource-src/job-inputs/task-get-date.yml
+      file: resource-src/job-inputs/task-echo.yml
       # config:
       #   platform: linux
       #   image_resource:
