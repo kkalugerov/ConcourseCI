@@ -17,11 +17,11 @@ jobs:
   
   - name: job-show-date
     plan:
-    - get: resource-src
-      passed: [job-test-app]
-      trigger: true
-    - task: show-date
-      file: resource-src/job-inputs/task-echo.yml
+      - get: resource-src
+        passed: [job-test-app]
+        trigger: true
+      - task: show-date
+        file: resource-src/job-inputs/task-echo.yml
       # config:
       #   platform: linux
       #   image_resource:
