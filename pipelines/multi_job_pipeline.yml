@@ -13,7 +13,7 @@ jobs:
       - get: resource-src
         trigger: true
       - task: run-python
-        file: resource-src/job-inputs/task-run-python.yml
+        file: resource-src/tasks/run_python.yml
   
   - name: job-show-date
     plan:

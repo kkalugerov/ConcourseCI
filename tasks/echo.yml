@@ -10,4 +10,4 @@ inputs:
     # path: resource-src/job-inputs/
 
 run:
-  path: resource-src/job-inputs/echo.sh
+  path: resource-src/scripts/bash/echo.sh
