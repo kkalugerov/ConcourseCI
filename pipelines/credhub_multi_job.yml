@@ -10,7 +10,7 @@ resources:
   - name: resource-src
     type: git
     source:
-      uri: ((test:params.GIT_REPO))
+      uri: ((test:GIT_REPO))
       branch: main
 
 
