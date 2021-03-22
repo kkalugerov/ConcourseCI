@@ -4,14 +4,13 @@ var_sources:
   type: dummy
   config:
     vars:
-      params:
-        GIT_REPO: ((git-repo))
+        GIT_REPO: https://github.com/kkalugerov/ConcourseCI.git
 
 resources:
   - name: resource-src
     type: git
     source:
-      uri: ((dumb:params.GIT_REPO))
+      uri: ((dumb:GIT_REPO))
       branch: main
 
 
