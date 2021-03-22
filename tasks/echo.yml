@@ -12,6 +12,4 @@ inputs:
 params:
   test_env: ((test_env))
 run:
-  path: bash
-  args: [whoami]
-  # path: resource-src/scripts/bash/echo.sh
+  path: resource-src/scripts/bash/echo.sh
