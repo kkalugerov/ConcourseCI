@@ -4,13 +4,14 @@ var_sources:
   type: dummy
   config:
     vars:
-      GIT_REPO: ((git-repo))
+      params:
+        GIT_REPO: ((git-repo))
 
 resources:
   - name: resource-src
     type: git
     source:
-      uri: ((dumb:GIT_REPO))
+      uri: ((dumb:params.GIT_REPO))
       branch: main
 
 
