@@ -3,4 +3,4 @@
 set -e
 set -x
 
-echo "This is second job"
+echo "Calling ENV test_env with value: $1"

@@ -30,16 +30,14 @@ jobs:
         passed: [job-test-app]
         trigger: true
       - task: get-env
-        # file: resource-src/tasks/echo.yml
-        config:
-          platform: linux
-          image_resource:
-            type: docker-image
-            source: {repository: alpine}
-          params:
-            ci-user: ((ci-user))
-          run:
-            path: sh
-            args:
-              - -exc
-              - echo "This is the second JOB! Hellow from ((ci-user))"
+        file: resource-src/tasks/echo.yml
+        # config:
+        #   platform: linux
+        #   image_resource:
+        #     type: docker-image
+        #     source: {repository: alpine}
+        #   params:
+        #     test_env: ((test_env))
+        #   run:
+        #     path: echo
+        #     args: [((test_env))]
