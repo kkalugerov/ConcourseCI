@@ -12,4 +12,6 @@ inputs:
 params:
   test_env: ((test_env))
 run:
-  path: resource-src/scripts/bash/echo.sh
+  path: bash
+  args: [which bash]
+  # path: resource-src/scripts/bash/echo.sh
