@@ -3,8 +3,6 @@
 # - name: test
 #   type: dummy
 #   config:
-#     params:
-#       GIT_REPO: ((git-repo))
 #     vars:
 #         GIT_REPO: https://github.com/kkalugerov/ConcourseCI.git
 
@@ -26,20 +24,22 @@ jobs:
       - task: run-python
         file: resource-src/tasks/run_python.yml
   
-  - name: job-show-date
+  - name: job-get-env
     plan:
       - get: resource-src
         passed: [job-test-app]
         trigger: true
-      - task: show-date
-        file: resource-src/tasks/echo.yml
-        # config:
-        #   platform: linux
-        #   image_resource:
-        #     type: docker-image
-        #     source: {repository: alpine}
-        #   run:
-        #     path: sh
-        #     args:
-        #       - -exc
-        #       - echo "This is the second JOB"
+      - task: get-env
+        # file: resource-src/tasks/echo.yml
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: alpine}
+          params:
+            ci-user: ((ci-user))
+          run:
+            path: sh
+            args:
+              - -exc
+              - echo "This is the second JOB! Hellow from ((ci-user))"
