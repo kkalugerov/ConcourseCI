@@ -1,10 +1,18 @@
 ---
+var_sources:
+- name: test
+  type: dummy
+  config:
+    vars:
+      GIT_REPO: ((git-repo))
+
 resources:
   - name: resource-src
     type: git
     source:
-      uri: https://github.com/kkalugerov/ConcourseCI.git
+      uri: ((dumb:GIT_REPO))
       branch: main
+
 
 jobs:
   - name: job-test-app
