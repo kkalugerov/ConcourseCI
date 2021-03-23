@@ -7,11 +7,11 @@ image_resource:
 
 inputs:
   - name: resource-src
-    # path: resource-src/job-inputs/
 
+## invoke parameter with key test_env from credhub
 params:
   test_env: ((test_env))
+
 run:
-  # path: echo
   args: [((test_env))]
   path: resource-src/scripts/bash/echo.sh

@@ -6,8 +6,7 @@ image_resource:
   source: {repository: python, tag: alpine}
 
 inputs:
-  - name: resource-src
-    # path: resource-src/job-inputs/
+  - name: source
 
 run:
-  path: resource-src/scripts/bash/execute.sh
+  path: source/scripts/bash/exec_python.sh
