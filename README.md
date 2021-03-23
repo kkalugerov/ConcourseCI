@@ -15,3 +15,5 @@ fly -t tutorial set-pipeline -p "pipeline-name" -c "pipeline-config-file"
 ### Unpause pipeline
 fly -t test unpause-pipeline -p "pipeline-name"
 
+### Create secret in CredHub
+credhub set -n /concourse/main/"pipeline-name"/"secret-name" --type value --value test-value
