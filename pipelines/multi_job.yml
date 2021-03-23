@@ -13,7 +13,7 @@ jobs:
       - get: source
         trigger: true
       - task: exec_python
-        file: source/tasks/run_python.yml
+        file: source/tasks/exec_python.yml
   
   - name: exec_bash
     plan:

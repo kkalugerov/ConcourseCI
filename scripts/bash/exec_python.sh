@@ -1,6 +1,6 @@
 #!/bin/sh
 
 set -e
-sex -x
+set -x
 
 python3 resource-src/scripts/python/hello.py
