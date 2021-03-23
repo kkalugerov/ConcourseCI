@@ -3,7 +3,7 @@ resources:
   - name: resource-src
     type: git
     source:
-      uri: https://github.com/kkalugerov/ConcourseCI.git
+      uri: ((git-repo))
       branch: main
 
 jobs:
