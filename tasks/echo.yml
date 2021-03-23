@@ -14,4 +14,4 @@ params:
 run:
   # path: echo
   # args: [((test_env))]
-  # path: resource-src/scripts/bash/echo.sh ((test_env))
+  path: resource-src/scripts/bash/echo.sh ((test_env))
