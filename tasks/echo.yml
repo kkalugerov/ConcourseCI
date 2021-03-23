@@ -6,7 +6,7 @@ image_resource:
   source: {repository: ubuntu}
 
 inputs:
-  - name: resource-src
+  - name: source
 
 ## invoke parameter with key test_env from credhub
 params:
@@ -14,4 +14,4 @@ params:
 
 run:
   args: [((test_env))]
-  path: resource-src/scripts/bash/echo.sh
+  path: source/scripts/bash/echo.sh
